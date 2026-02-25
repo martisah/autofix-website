@@ -1,0 +1,46 @@
+.hours-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: Arial, sans-serif;
+}
+
+.hours-title {
+  display: none;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: none;
+  font-size: 14px;
+}
+
+.hours-item:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 400;
+  color: #e0e0e0;
+}
+
+.time {
+  color: #e0e0e0;
+}
+
+/* Highlight current day */
+.today {
+  font-weight: 500;
+  color: #e0e0e0;
+}

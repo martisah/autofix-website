@@ -1,0 +1,123 @@
+.service-detail {
+  min-height: 100vh;
+  padding: 60px 20px 40px;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  color: #fff;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #f64c4c;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  color: #ff6b6b;
+}
+
+.service-detail-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-detail-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #f64c4c 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.service-description {
+  font-size: 18px;
+  color: #d0d0d0;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.detail-section {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid #f64c4c;
+}
+
+.detail-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f64c4c;
+}
+
+.detail-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-section ul li {
+  font-size: 16px;
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.detail-section ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #f64c4c;
+  font-weight: bold;
+}
+
+.cta-section {
+  text-align: center;
+  background: rgba(246, 76, 76, 0.1);
+  border-left-color: #f64c4c;
+}
+
+.cta-section .btn {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .service-detail-content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .service-description {
+    font-size: 16px;
+  }
+
+  .detail-section {
+    padding: 20px;
+  }
+
+  .detail-section h2 {
+    font-size: 22px;
+  }
+
+  .detail-section p {
+    font-size: 14px;
+  }
+
+  .detail-section ul li {
+    font-size: 14px;
+  }
+}

@@ -1,88 +1,137 @@
 .services {
   width: 100%;
-  min-height: 550px;
   display: flex;
   justify-content: center;
-  padding: 50px;
-  background: #0c0909e5;
+  padding: 80px 50px;
+  background: #000000;
   color: #fff;
 }
 
 .services-text {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -40px;
 }
 .services-text h3 {
-  font-size: 25px;
-  margin-top: 15px;
-  margin-bottom: 25px;
+  font-size: 16px;
+  margin-bottom: 15px;
   text-align: center;
-  color: #7c1b1b;
+  color: #f64c4c;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.services-text img{
-     width: 9%;
-    height: auto;
-    margin-top: -10px;
-
+.services-text img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 40px;
+  opacity: 0.9;
 }
-
 
 .services-text h2 {
-  font-size: 40px;
-  /* margin-bottom: 40px; */
+  font-size: 50px;
+  margin-bottom: 70px;
   text-align: center;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 /* TWO MAIN COLUMNS */
 .services-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* left and right columns */
-  gap: 80px;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
   width: 100%;
 }
 
 /* EACH COLUMN */
+.services-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .services-column h4 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 35px;
   text-align: center;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 0;
+  border-bottom: none;
+  letter-spacing: 0.5px;
 }
 
 /* GRID INSIDE EACH COLUMN */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 blocks per row */
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 /* SERVICE BLOCK */
 .service-block {
-  background: rgba(174, 33, 33, 0.452);
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 15 px;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  color: #d0d0d0;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 75px;
+  cursor: pointer;
 }
 
 .service-block:hover {
-  background: rgba(164, 22, 22, 0.814);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(246, 76, 76, 0.5);
+  color: #fff;
   transform: translateY(-2px);
 }
 
 /* RESPONSIVE: stack columns and grid blocks on mobile */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .services-columns {
-    grid-template-columns: 1fr; /* stack columns vertically */
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 60px 30px;
+  }
+
+  .services-text img {
+    width: 100px;
+    margin-bottom: 25px;
+  }
+
+  .services-text h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
   }
 
   .services-grid {
-    grid-template-columns: 1fr; /* stack blocks vertically in each column */
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .service-block {
+    min-height: 70px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import './Contact.css'
+import BusinessHours from '../BusinessHours/Businesshours';
+
 
 function Contact() {
 
@@ -55,18 +57,17 @@ const [result, setResult] = React.useState("");
             <p>7720 Highland rd, Waterford MI 48327</p>
          </ul>
 
-    <div className='hours'>
-            <h2>Our Hours</h2>
-            <p>Monday  8am-6pm</p>
-            <p>Tuesday 8am-6pm</p>
-            <p>Wednesday 8am-6pm</p>
-            <p>Thursday  8am-6pm</p>
-            <p>Friday    8am-6pm</p>
-            <p>Saturday Appointment Only</p>
-            <p>Sunday   Closed</p> 
-         
-         </div>
-        </div>
+     <div className='hours'>
+           
+        <h1>Visit Us</h1>
+      <p>Call us or stop by during business hours</p>
+
+      <BusinessHours />
+      </div>
+    </div> 
+<div>
+      
+    </div>
     </div>
   )
 }

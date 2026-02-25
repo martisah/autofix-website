@@ -4,31 +4,29 @@ import shop from '../../assets/shop.jpg'
 
 const About = () => {
   return (
-    <>
-        <div className='about'>
-
-          <div className='.about-section'>
-              <ul>What We Believe In</ul>
-              <p>We believe in honest communication, fair pricing, and treating every customer like family. Whether it's routine maintenance or a complex repair,
-                  we take the time to explain the issue and recommend the best solution for your vehicle.</p>
-          </div>
-          <div className='.about-section'>
-              <ul>Why We Do What We Do</ul>
-              <p>Nowadays skilled workers are rare and honest, skilled workers even more so. We are proud of being a rare gem.
-                  With AutoFix you can be certain that there's full transperancy and honesty in every repair. </p>
-          </div>
-          <div className='.about-section'>
-              <ul>What To Expect</ul>
-              <p>At AutoFix Transmissions you will be cordially greated and recieved by our receptionist who will gather basic
-                  information on your vehicle, shortly after you will have the opportunity to explain your concern to a
-                  qualified technician who will ultimatly suggest and perform any needed repairs.</p>
+    <div className='about'>
+      <div className='about-content'>
+        <div className='about-section'>
+          <ul><li>Our Commitment</li></ul>
+              <p>We are committed to transparent communication, fair and competitive pricing, and a customer experience built on trust and respect. Whether performing routine maintenance or addressing complex repairs, our team takes the time to clearly explain your vehicle’s needs and provide thoughtful, reliable solutions tailored to ensure optimal performance and safety.</p>
           </div>
 
-        </div>
-        <div className='shop'>
-            <img src={shop} alt=''></img>
-        </div>
-    </>
+        <div className='about-section'>
+          <ul><li>Why We Do What We Do</li></ul>
+              <p>At AutoFix, our work is driven by more than just repairing vehicles — it’s about serving people. We understand how essential a reliable vehicle is to your daily life, your family, and your livelihood. Our purpose is simple: to keep you safely on the road while building long-term relationships grounded in integrity and care. </p>
+          </div>
+
+        <div className='about-section'>
+          <ul><li>What To Expect</li></ul>
+            
+              <p>Skilled professionals are increasingly difficult to find — and those who combine expertise with integrity are even rarer. At AutoFix, we take pride in standing out for both. With us, you can expect complete transparency, honest recommendations, and the highest standard of workmanship in every repair.</p>
+          </div>
+      </div>
+
+      <div className='shop'>
+        <img src={shop} alt='AutoFix Shop' />
+      </div>
+    </div>
   )
 }
 

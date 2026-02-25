@@ -16,6 +16,7 @@
 // export default Hero
 
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Hero.css'
 
 const texts = [
@@ -26,6 +27,7 @@ const texts = [
 ]
 
 const Hero = () => {
+  const navigate = useNavigate()
   const [text, setText] = useState('')
   const [textIndex, setTextIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
@@ -74,7 +76,7 @@ const Hero = () => {
           Here at AutoFix, our ASE Certified Technicians specialize in transmission and general repair services
         </p>
 
-        <button className="btn">Explore More</button>
+        <button className="btn" onClick={() => navigate('/explore')}>Explore More</button>
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar/navbar'
 import Hero from './components/Hero/Hero'
 import Services from './components/Services/Services'
@@ -7,21 +8,41 @@ import Contact from './components/Contact/Contact'
 import Title from './components/Title/Title'
 import Footer from './components/Footer/Footer'
 import About from './components/About/About'
+import Explore from './components/Explore/Explore'
+import TransmissionSlippage from './components/TransmissionSlippage/TransmissionSlippage'
+import ServiceDetail from './components/ServiceDetail/ServiceDetail'
+
+const MainPage = () => {
+  return (
+    <>
+      <div id='hero'>
+        <Hero/>
+      </div>
+      <Services/>
+      
+      {/* <Reviews/> */}
+      <Title subTitle='About Us' title='Family Owned & Operated'/>
+      <About/>
+      <div className='container'/>
+        <Title subTitle='Contact Us' title='' />
+        <Contact/>
+        <Footer/>
+    </>
+  )
+}
+
 const App = () => {
   return (
-  <div>
-    <Navbar/>
-    <Hero/>
-    <Title subTitle='Services' title='Every repair that gets done at AutoFix is with full confidence, thanks to our ASE certified and State certified technicians.'/> 
-    <Services/>
-    {/* <Reviews/> */}
-    <Title subTitle='About Us' title='Family Owned & Operated'/>
-    <About/>
-    <div className='container'/>
-      <Title subTitle='Contact Us' title='' />
-      <Contact/>
-      <Footer/>
-    </div>
+    
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/transmission-slippage" element={<TransmissionSlippage />} />
+        <Route path="/service/:serviceId" element={<ServiceDetail />} />
+      </Routes>
+    </Router>
   )
 }
 
