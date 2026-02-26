@@ -3,6 +3,61 @@ import './ServiceDetail.css'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const serviceContent = {
+  slippage: {
+    title: 'Transmission Slippage',
+    description: 'Complete transmission diagnostic and restoration services',
+    sections: [
+      {
+        heading: 'What is Transmission Slippage?',
+        content: "Transmission slippage occurs when your vehicle's transmission loses power transfer between the engine and wheels. You might notice the engine RPM increasing without a corresponding increase in vehicle speed, or a loss of power when accelerating.",
+      },
+      {
+        heading: 'Common Signs & Symptoms',
+        points: [
+          "Engine RPM revs up but vehicle doesn't accelerate proportionally",
+          'Delay in response when shifting gears',
+          'Burning smell from the transmission',
+          'Vehicle jerking or hesitation during acceleration',
+          "Difficulty maintaining speed on hills",
+          "Transmission fluid leaks",
+          'Check Engine Light illuminated'
+        ]
+      },
+      {
+        heading: 'Causes of Transmission Slippage',
+        points: [
+          '<b>Low Transmission Fluid:</b> The most common cause. Low fluid reduces hydraulic pressure needed for gear engagement.',
+          '<b>Worn Transmission Fluid:</b> Old, burnt, or dirty fluid loses its protective properties.',
+          "<b>Worn Clutch Plates:</b> In manual transmissions, worn clutches can't grip properly.",
+          '<b>Damaged Bands:</b> Transmission bands that hold gears can wear or break over time.',
+          '<b>Internal Component Wear:</b> Seals, gaskets, and internal parts may deteriorate.',
+          '<b>Transmission Overheating:</b> Can damage internal components and fluid.'
+        ]
+      },
+      {
+        heading: 'Why You Should Address It',
+        content: "Transmission slippage is not something you should ignore. Continuing to drive with a slipping transmission can cause:",
+        points: [
+          'Accelerated wear to transmission components',
+          'Complete transmission failure, which is very expensive to repair or replace',
+          'Safety concerns due to lack of vehicle control',
+          'Reduced fuel efficiency'
+        ]
+      },
+      {
+        heading: 'Our Solution',
+        content: "At AutoFix, our ASE-certified technicians will:",
+        points: [
+          'Perform a complete transmission diagnostic to identify the root cause',
+          'Check transmission fluid level, color, and condition',
+          'Scan for diagnostic trouble codes',
+          "Test drive your vehicle to confirm the issue",
+          'Recommend the best repair solution for your specific situation'
+        ],
+        conclusion: " Solutions may range from a simple fluid and filter change to more extensive repairs, depending on what our diagnostics reveal."
+      }
+    ]
+  },
   rebuilds: {
     title: 'Transmission Rebuilds',
     description: 'Complete transmission rebuild and restoration services',
@@ -789,7 +844,17 @@ const ServiceDetail = () => {
 
         <section className="detail-section cta-section">
           <h2>Ready to Get Started?</h2>
-          <button className="btn" onClick={() => navigate('/#contact')}>Schedule Service</button>
+          <button
+            className="btn"
+            onClick={() => {
+              navigate('/'); // navigate first
+              setTimeout(() => {
+                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+              }, 100); // small delay to let the new page render
+            }}
+          >
+            Schedule Service
+          </button>
         </section>
       </div>
     </div>

@@ -31,7 +31,7 @@ const [result, setResult] = React.useState("");
   };
 
   return (
-    <div className='contact'>
+    <div id="contact" className="contact">
         <div className="contact-col">
             <h2>Send us a message</h2>
             <p>Please feel free to contact us with any questions or concerns regarding your vehicle, and our team will respond within 24 hours.</p>

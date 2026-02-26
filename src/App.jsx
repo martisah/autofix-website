@@ -9,7 +9,6 @@ import Title from './components/Title/Title'
 import Footer from './components/Footer/Footer'
 import About from './components/About/About'
 import Explore from './components/Explore/Explore'
-import TransmissionSlippage from './components/TransmissionSlippage/TransmissionSlippage'
 import ServiceDetail from './components/ServiceDetail/ServiceDetail'
 
 const MainPage = () => {
@@ -39,7 +38,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/transmission-slippage" element={<TransmissionSlippage />} />
         <Route path="/service/:serviceId" element={<ServiceDetail />} />
       </Routes>
     </Router>

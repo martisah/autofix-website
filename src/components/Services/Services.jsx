@@ -15,7 +15,7 @@ const Services = () => {
           <div className="services-column">
             <h4>Transmission Repair</h4>
             <div className="services-grid">
-              <div className="service-block" onClick={() => navigate('/transmission-slippage')}>Slipping</div>
+              <div className="service-block" onClick={() => navigate('/service/slippage')}>Slipping</div>
               <div className="service-block" onClick={() => navigate('/service/rebuilds')}>Rebuilds</div>
               <div className="service-block" onClick={() => navigate('/service/diagnostics')}>Diagnostics</div>
               <div className="service-block" onClick={() => navigate('/service/limp-mode')}>Limp Mode</div>

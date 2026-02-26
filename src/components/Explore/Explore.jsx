@@ -53,7 +53,17 @@ const Explore = () => {
 
         <section className="explore-section cta-section">
           <h2>Ready to Experience Quality Service?</h2>
-          <button className="btn" onClick={() => navigate('/#contact')}>Schedule Service</button>
+            <button
+              className="btn"
+              onClick={() => {
+                navigate('/');
+                setTimeout(() => {
+                  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                }, 100);
+              }}
+            >
+              Schedule Service
+            </button>
         </section>
       </div>
     </div>
