@@ -7,7 +7,7 @@
 
 .title p {
     font-size: 16px;
-    color: #f64c4c;
+    color: hwb(0 98% 1%);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;

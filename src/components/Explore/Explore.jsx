@@ -52,7 +52,7 @@ const Explore = () => {
         </section>
 
         <section className="explore-section cta-section">
-          <h2>Ready to Experience Quality Service?</h2>
+          <h2>Ready To Experience Quality Service?</h2>
             <button
               className="btn"
               onClick={() => {

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   padding: 80px 50px;
-  background: #000000;
+  background: #000;
   color: #fff;
 }
 
@@ -14,15 +14,17 @@
   flex-direction: column;
   align-items: center;
 }
+
 .services-text h3 {
   font-size: 16px;
   margin-bottom: 15px;
   text-align: center;
-  color: #f64c4c;
+  color: #faf8f8;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .services-text img {
   width: 100px;
   height: auto;
@@ -39,7 +41,6 @@
   letter-spacing: 1px;
 }
 
-/* TWO MAIN COLUMNS */
 .services-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,7 +48,6 @@
   width: 100%;
 }
 
-/* EACH COLUMN */
 .services-column {
   display: flex;
   flex-direction: column;
@@ -64,14 +64,12 @@
   letter-spacing: 0.5px;
 }
 
-/* GRID INSIDE EACH COLUMN */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
-/* SERVICE BLOCK */
 .service-block {
   background: rgba(255, 255, 255, 0.05);
   padding: 18px 15px;
@@ -96,7 +94,7 @@
   transform: translateY(-2px);
 }
 
-/* RESPONSIVE: stack columns and grid blocks on mobile */
+/* Responsive */
 @media (max-width: 1000px) {
   .services-columns {
     grid-template-columns: 1fr;

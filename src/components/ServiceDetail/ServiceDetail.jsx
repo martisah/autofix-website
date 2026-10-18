@@ -3,71 +3,16 @@ import './ServiceDetail.css'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const serviceContent = {
-  slippage: {
-    title: 'Transmission Slippage',
-    description: 'Complete transmission diagnostic and restoration services',
-    sections: [
-      {
-        heading: 'What is Transmission Slippage?',
-        content: "Transmission slippage occurs when your vehicle's transmission loses power transfer between the engine and wheels. You might notice the engine RPM increasing without a corresponding increase in vehicle speed, or a loss of power when accelerating.",
-      },
-      {
-        heading: 'Common Signs & Symptoms',
-        points: [
-          "Engine RPM revs up but vehicle doesn't accelerate proportionally",
-          'Delay in response when shifting gears',
-          'Burning smell from the transmission',
-          'Vehicle jerking or hesitation during acceleration',
-          "Difficulty maintaining speed on hills",
-          "Transmission fluid leaks",
-          'Check Engine Light illuminated'
-        ]
-      },
-      {
-        heading: 'Causes of Transmission Slippage',
-        points: [
-          '<b>Low Transmission Fluid:</b> The most common cause. Low fluid reduces hydraulic pressure needed for gear engagement.',
-          '<b>Worn Transmission Fluid:</b> Old, burnt, or dirty fluid loses its protective properties.',
-          "<b>Worn Clutch Plates:</b> In manual transmissions, worn clutches can't grip properly.",
-          '<b>Damaged Bands:</b> Transmission bands that hold gears can wear or break over time.',
-          '<b>Internal Component Wear:</b> Seals, gaskets, and internal parts may deteriorate.',
-          '<b>Transmission Overheating:</b> Can damage internal components and fluid.'
-        ]
-      },
-      {
-        heading: 'Why You Should Address It',
-        content: "Transmission slippage is not something you should ignore. Continuing to drive with a slipping transmission can cause:",
-        points: [
-          'Accelerated wear to transmission components',
-          'Complete transmission failure, which is very expensive to repair or replace',
-          'Safety concerns due to lack of vehicle control',
-          'Reduced fuel efficiency'
-        ]
-      },
-      {
-        heading: 'Our Solution',
-        content: "At AutoFix, our ASE-certified technicians will:",
-        points: [
-          'Perform a complete transmission diagnostic to identify the root cause',
-          'Check transmission fluid level, color, and condition',
-          'Scan for diagnostic trouble codes',
-          "Test drive your vehicle to confirm the issue",
-          'Recommend the best repair solution for your specific situation'
-        ],
-        conclusion: " Solutions may range from a simple fluid and filter change to more extensive repairs, depending on what our diagnostics reveal."
-      }
-    ]
-  },
   rebuilds: {
-    title: 'Transmission Rebuilds',
+    title: 'TRANSMISSION REBUILDS',
     description: 'Complete transmission rebuild and restoration services',
     sections: [
       {
-        heading: 'What is a Transmission Rebuild?',
+        heading: 'WHAT IS A TRANSMISSION REBUILD?',
         content: 'A transmission rebuild involves disassembling your transmission, inspecting all internal components, replacing worn parts, and reassembling it to factory specifications. This restores your transmission to like-new condition.'
       },
       {
-        heading: 'When Do You Need a Rebuild?',
+        heading: 'WHEN DO YOU NEED A TRANSMISSION REBUILD?',
         points: [
           'Complete transmission failure',
           'Multiple internal component failures',
@@ -77,7 +22,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Rebuild Process',
+        heading: 'OUR REBUILD PROCESS',
         points: [
           'Complete diagnostic evaluation of all components',
           'Careful disassembly and documentation',
@@ -88,7 +33,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Benefits of Choosing AutoFix',
+        heading: 'BENEFITS OF CHOOSING AUTOFIX',
         points: [
           'ASE Certified technicians with years of experience',
           'Quality parts and workmanship',
@@ -100,15 +45,15 @@ const serviceContent = {
     ]
   },
   diagnostics: {
-    title: 'Transmission Diagnostics',
+    title: 'TRANSMISSION DIAGNOSTICS',
     description: 'Advanced transmission diagnostic services',
     sections: [
       {
-        heading: 'What is Transmission Diagnostics?',
+        heading: 'WHAT IS TRANSMISSION DIAGNOSTICS?',
         content: 'Transmission diagnostics is a comprehensive analysis of your transmission system to identify problems, their causes, and the best repair solutions. We use state-of-the-art equipment and expert knowledge to pinpoint issues.'
       },
       {
-        heading: 'Why Get Your Transmission Diagnosed?',
+        heading: 'WHY GET YOUR TRANSMISSION DIAGNOSED?',
         points: [
           'Identify problems before they become catastrophic',
           'Determine the most cost-effective repair solution',
@@ -118,7 +63,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Diagnostic Process',
+        heading: 'OUR DIAGNOSTIC PROCESS',
         points: [
           'Visual inspection of transmission and fluid',
           'Computer scanning for trouble codes',
@@ -129,7 +74,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'What We Discover',
+        heading: 'WHAT WE DISCOVER',
         points: [
           'Fluid condition and leaks',
           'Internal component wear',
@@ -142,15 +87,15 @@ const serviceContent = {
     ]
   },
   'limp-mode': {
-    title: 'Limp Mode Service',
+    title: 'LIMP MODE SERVICE',
     description: 'Limp mode detection and repair services',
     sections: [
       {
-        heading: 'What is Limp Mode?',
+        heading: 'WHAT IS LIMP MODE?',
         content: 'Limp mode (also called "safe mode" or "failsafe mode") is a protective feature your transmission activates when it detects a problem. In this mode, your transmission limits operation to prevent further damage, resulting in reduced power and performance.'
       },
       {
-        heading: 'Signs Your Transmission is in Limp Mode',
+        heading: 'SIGNS YOUR TRANSMISSION IS IN LIMP MODE',
         points: [
           'Check Engine Light illuminated',
           'Loss of power and acceleration',
@@ -161,7 +106,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Common Causes',
+        heading: 'COMMON CAUSES',
         points: [
           'Low transmission fluid',
           'Faulty solenoids',
@@ -172,7 +117,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Solution',
+        heading: 'OUR SOLUTION',
         points: [
           'Complete diagnostic scan to identify the code',
           'Inspect all sensors and solenoids',
@@ -186,15 +131,15 @@ const serviceContent = {
     ]
   },
   jerking: {
-    title: 'Transmission Jerking & Hesitation',
+    title: 'TRANSMISSION JERKING',
     description: 'Diagnosis and repair of jerking and hesitation issues',
     sections: [
       {
-        heading: 'What Causes Transmission Jerking?',
+        heading: 'WHAT CAUSES TRANSMISSION JERKING?',
         content: 'Transmission jerking or hesitation occurs when gears don\'t engage smoothly or power delivery is interrupted. This can feel like the vehicle is surging, bucking, or hesitating during acceleration or gear changes.'
       },
       {
-        heading: 'Common Symptoms',
+        heading: 'COMMON SYMPTOMS OF JERKING',
         points: [
           'Vehicle jerks during acceleration',
           'Hesitation when shifting gears',
@@ -205,7 +150,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Possible Causes',
+        heading: 'POSSIBLE CAUSES',
         points: [
           'Low or dirty transmission fluid',
           'Worn engine mounts',
@@ -217,7 +162,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'How We Fix It',
+        heading: 'HOW WE FIX IT',
         points: [
           'Complete vehicle diagnostics',
           'Transmission fluid inspection and analysis',
@@ -231,15 +176,15 @@ const serviceContent = {
     ]
   },
   overheating: {
-    title: 'Transmission Overheating',
+    title: 'TRANSMISSION OVERHEATING',
     description: 'Transmission cooling system diagnosis and repair',
     sections: [
       {
-        heading: 'Why Transmission Overheating is Dangerous',
+        heading: 'WHY TRANSMISSION OVERHEATING IS DANGEROUS',
         content: 'Transmission fluid acts as both a lubricant and coolant. When your transmission overheats, the fluid breaks down, losing its protective properties. This leads to accelerated wear, component failure, and potential transmission breakdown.'
       },
       {
-        heading: 'Signs of Overheating',
+        heading: 'SIGNS OF OVERHEATING',
         points: [
           'Burning smell from the transmission',
           'Transmission fluid appears dark or burnt',
@@ -251,7 +196,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Common Causes',
+        heading: 'COMMON CAUSES',
         points: [
           'Low transmission fluid level',
           'Dirty or clogged transmission cooler',
@@ -263,7 +208,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Repair Process',
+        heading: 'OUR REPAIR PROCESS',
         points: [
           'Check transmission fluid level and condition',
           'Inspect transmission cooler for blockages',
@@ -277,15 +222,15 @@ const serviceContent = {
     ]
   },
   chattering: {
-    title: 'Transmission Chattering & Shuddering',
+    title: 'TRANSMISSION CHATTERING',
     description: 'Chattering and shuddering noise diagnosis and repair',
     sections: [
       {
-        heading: 'What is Transmission Chattering?',
+        heading: 'WHAT IS TRANSMISSION CHATTERING?',
         content: 'Transmission chattering or shuddering is a vibration or grinding noise that occurs during gear shifts or while driving. It can feel like the transmission is struggling to engage properly, often accompanied by unusual sounds.'
       },
       {
-        heading: 'Common Symptoms',
+        heading: 'COMMON SYMPTOMS',
         points: [
           'Grinding or chattering noise during shifts',
           'Vibration felt through the steering wheel or seat',
@@ -296,7 +241,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Possible Causes',
+        heading: 'POSSIBLE CAUSES',
         points: [
           'Low or dirty transmission fluid',
           'Worn transmission bands or clutches',
@@ -309,7 +254,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Solution',
+        heading: 'OUR SOLUTION',
         points: [
           'Listen to the noise to identify the source',
           'Check transmission fluid condition and level',
@@ -324,15 +269,15 @@ const serviceContent = {
     ]
   },
   leaks: {
-    title: 'Transmission Leaks',
+    title: 'TRANSMISSION LEAKS',
     description: 'Transmission leak detection and repair',
     sections: [
       {
-        heading: 'Why Transmission Leaks Matter',
+        heading: 'WHY TRANSMISSION LEAKS MATTER',
         content: 'Transmission fluid is critical for operation and protection. Even small leaks can lead to low fluid levels, causing slipping, overheating, and eventual transmission failure. Identifying and fixing leaks early prevents costly repairs.'
       },
       {
-        heading: 'Signs of a Transmission Leak',
+        heading: 'SIGNS OF A TRANSMISSION LEAK',
         points: [
           'Red or pink fluid under your vehicle',
           'Transmission slipping or hesitation',
@@ -344,7 +289,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Common Leak Sources',
+        heading: 'COMMON LEAK SOURCES',
         points: [
           'Worn transmission pan gasket',
           'Leaking transmission cooler lines',
@@ -357,7 +302,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'How We Repair It',
+        heading: 'HOW WE REPAIR IT',
         points: [
           'Locate the source of the leak using visual inspection',
           'Clean the transmission area to confirm leak location',
@@ -371,16 +316,64 @@ const serviceContent = {
       }
     ]
   },
+  generalleaks: {
+    title: 'GENERAL LEAKS',
+    description: 'Leak detection and repair for all major vehicle systems',
+    sections: [
+      {
+        heading: 'WHY FLUID LEAKS MATTER',
+        content: 'Your vehicle relies on several critical fluids to operate safely and efficiently. Leaks can lead to low fluid levels, overheating, poor performance, and damage to major components. Identifying and repairing leaks early helps prevent costly repairs and keeps your vehicle running reliably.'
+      },
+      {
+        heading: 'SIGNS OF A LEAK',
+        points: [
+        'Puddles or spots under your vehicle',
+        'Unusual smells such as burning oil or sweet coolant',
+        'Low fluid levels between services',
+        'Dashboard warning lights',
+        'Overheating engine',
+        'Steering becoming stiff or noisy',
+        'Visible fluid residue around engine or components'
+        ]
+      },
+      {
+        heading: 'COMMON LEAK SOURCES',
+        points: [
+        'Engine oil pan gasket or valve cover gasket',
+        'Radiator or coolant hoses',
+        'Water pump or thermostat housing',
+        'Transmission pan gasket or seals',
+        'Power steering lines or pump',
+        'Brake lines or brake components',
+        'Differential or axle seals',
+        'Worn hoses, clamps, or fittings'
+        ]
+      },
+      {
+        heading: 'HOW WE REPAIR IT',
+        points: [
+        'Perform a full visual inspection to locate the leak',
+        'Clean affected areas to accurately trace the source',
+        'Use dye or pressure testing when needed',
+        'Replace worn gaskets, seals, or damaged components',
+        'Repair or replace leaking hoses or lines',
+        'Refill and properly bleed affected systems',
+        'Test drive and recheck for leaks',
+        'Verify fluid levels and system operation'
+        ]
+      }
+    ]
+  },
   'bad-shifting': {
-    title: 'Bad Transmission Shifts',
+    title: 'BAD TRANSMISSION SHIFTS',
     description: 'Shift quality diagnosis and repair',
     sections: [
       {
-        heading: 'What are Bad Transmission Shifts?',
+        heading: 'WHAT ARE BAD TRANSMISSION SHIFTS?',
         content: 'Bad or rough transmission shifts occur when your vehicle doesn\'t smoothly transition between gears. You might experience delays, jerking, grinding, or hard shifts that make for an uncomfortable driving experience.'
       },
       {
-        heading: 'Types of Shift Problems',
+        heading: 'TYPES OF SHIFT PROBLEMS',
         points: [
           'Delayed shifts - transmission takes too long to engage',
           'Hard shifts - abrupt, forceful gear changes',
@@ -391,7 +384,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Common Causes',
+        heading: 'COMMON CAUSES',
         points: [
           'Low or dirty transmission fluid',
           'Worn transmission bands or clutches',
@@ -404,7 +397,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Diagnostic & Repair Process',
+        heading: 'OUR DIAGNOSTIC & REPAIR PROCESS',
         points: [
           'Test drive to evaluate shift quality',
           'Computer diagnostic scan',
@@ -419,15 +412,15 @@ const serviceContent = {
     ]
   },
   'check-engine': {
-    title: 'Check Engine Light - General Repair',
+    title: 'CHECK ENGINE LIGHT',
     description: 'Diagnostic and repair of Check Engine Light issues',
     sections: [
       {
-        heading: 'What Does the Check Engine Light Mean?',
+        heading: 'WHAT DOES THE CHECK ENGINE LIGHT MEAN?',
         content: 'Your vehicle\'s Check Engine Light indicates that the onboard diagnostic system has detected a problem with the engine, transmission, emissions system, or related components. It\'s important to get it diagnosed promptly.'
       },
       {
-        heading: 'Common Issues Causing Check Engine Light',
+    heading: 'COMMON ISSUES CAUSING CHECK ENGINE LIGHT',
         points: [
           'Faulty oxygen sensor',
           'Loose or damaged gas cap',
@@ -440,7 +433,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Why You Should Address It',
+        heading: 'WHY YOU SHOULD ADDRESS IT',
         points: [
           'Identify potentially serious engine problems early',
           'Prevent further damage and expensive repairs',
@@ -451,7 +444,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Diagnostic Process',
+        heading: 'OUR DIAGNOSTIC PROCESS',
         points: [
           'Connect vehicle to diagnostic scanner',
           'Read diagnostic trouble codes (DTCs)',
@@ -466,15 +459,15 @@ const serviceContent = {
     ]
   },
   suspension: {
-    title: 'Suspension Service',
+    title: 'SUSPENSION SERVICE',
     description: 'Complete suspension diagnosis and repair',
     sections: [
       {
-        heading: 'Why Suspension Service is Important',
+        heading: 'WHY SUSPENSION SERVICE IS IMPORTANT',
         content: 'Your vehicle\'s suspension system affects handling, comfort, safety, and tire wear. Regular maintenance and timely repairs keep your vehicle performing safely and smoothly.'
       },
       {
-        heading: 'Signs of Suspension Problems',
+        heading: 'SIGNS OF SUSPENSION PROBLEMS',
         points: [
           'Rough or bumpy ride',
           'Excessive bouncing after bumps',
@@ -487,7 +480,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Common Suspension Components We Service',
+        heading: 'COMMON SUSPENSION COMPONENTS WE SERVICE',
         points: [
           'Shock absorbers and struts',
           'Springs and coils',
@@ -500,7 +493,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Suspension Services',
+        heading: 'OUR SUSPENSION SERVICES',
         points: [
           'Complete suspension inspection',
           'Alignment check and service',
@@ -515,15 +508,15 @@ const serviceContent = {
     ]
   },
   'engine-service': {
-    title: 'Engine Service',
+    title: 'ENGINE SERVICE',
     description: 'Comprehensive engine maintenance and repair',
     sections: [
       {
-        heading: 'Why Regular Engine Service Matters',
+        heading: 'WHY REGULAR ENGINE SERVICE MATTERS',
         content: 'Your engine is the heart of your vehicle. Regular maintenance and timely repairs keep your engine running smoothly, efficiently, and reliably for years to come.'
       },
       {
-        heading: 'Engine Service Includes',
+        heading: 'ENGINE SERVICE INCLUDES',
         points: [
           'Oil and filter changes',
           'Spark plug replacement',
@@ -536,7 +529,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Common Engine Problems We Fix',
+        heading: 'COMMON ENGINE PROBLEMS WE FIX',
         points: [
           'Misfiring or rough idle',
           'Loss of power or poor acceleration',
@@ -549,7 +542,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Engine Service Process',
+        heading: 'OUR ENGINE SERVICE PROCESS',
         points: [
           'Listen to engine symptoms',
           'Computer diagnostics',
@@ -564,15 +557,15 @@ const serviceContent = {
     ]
   },
   maintenance: {
-    title: 'Preventative Maintenance',
+    title: 'PREVENTATIVE MAINTENANCE',
     description: 'Keep your vehicle running at peak performance',
     sections: [
       {
-        heading: 'Why Preventative Maintenance?',
+        heading: 'WHY PREVENTATIVE MAINTENANCE?',
         content: 'Regular preventative maintenance is the best way to keep your vehicle reliable, maintain its value, and avoid expensive repairs. Staying on top of maintenance extends your vehicle\'s lifespan significantly.'
       },
       {
-        heading: 'Routine Maintenance Services',
+        heading: 'ROUTINE MAINTENANCE SERVICES',
         points: [
           'Oil and filter changes every 3,000-7,500 miles',
           'Air filter replacement',
@@ -585,7 +578,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Scheduled Service Items',
+        heading: 'SCHEDULED SERVICE ITEMS',
         points: [
           'Transmission fluid service',
           'Coolant system flush',
@@ -598,7 +591,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Benefits of Regular Maintenance',
+        heading: 'BENEFITS OF REGULAR MAINTENANCE',
         points: [
           'Improved fuel efficiency and performance',
           'Extended vehicle lifespan',
@@ -613,15 +606,15 @@ const serviceContent = {
     ]
   },
   brakes: {
-    title: 'Brake Service',
+    title: 'BRAKE SERVICE',
     description: 'Professional brake inspection, repair, and replacement',
     sections: [
       {
-        heading: 'Why Brake Service is Critical',
+        heading: 'WHY BRAKE SERVICE IS CRITICAL',
         content: 'Your brakes are one of the most important safety systems on your vehicle. Properly maintained brakes ensure you can stop safely when needed. Don\'t put off brake service.'
       },
       {
-        heading: 'Signs You Need Brake Service',
+        heading: 'SIGNS YOU NEED BRAKE SERVICE',
         points: [
           'Brake warning light illuminated',
           'Soft or spongy brake pedal',
@@ -634,7 +627,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Brake System Components We Service',
+        heading: 'BRAKE SYSTEM COMPONENTS WE SERVICE',
         points: [
           'Brake pads and rotors',
           'Brake calipers',
@@ -647,7 +640,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Brake Service Process',
+        heading: 'OUR BRAKE SERVICE PROCESS',
         points: [
           'Complete brake system inspection',
           'Brake pad thickness measurement',
@@ -662,15 +655,15 @@ const serviceContent = {
     ]
   },
   'ac-heating': {
-    title: 'AC & Heating Service',
+    title: 'AC & HEATING SERVICE',
     description: 'Climate control system repair and service',
     sections: [
       {
-        heading: 'AC and Heating System Importance',
+        heading: 'AC & HEATING SYSTEM IMPORTANCE',
         content: 'Your vehicle\'s air conditioning and heating systems provide comfort and safety. Proper climate control keeps you comfortable in any season and helps maintain clear windows for safe visibility.'
       },
       {
-        heading: 'Common AC and Heating Problems',
+        heading: 'COMMON AC & HEATING PROBLEMS',
         points: [
           'Air conditioning not blowing cold',
           'Heat not working or weak heat',
@@ -683,7 +676,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'AC and Heating Components We Service',
+        heading: 'AC & HEATING COMPONENTS WE SERVICE',
         points: [
           'Air conditioning compressor',
           'Condenser and evaporator',
@@ -696,7 +689,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Service Process',
+        heading: 'OUR SERVICE PROCESS',
         points: [
           'Diagnose the problem with precision equipment',
           'Check refrigerant level and pressure',
@@ -711,15 +704,15 @@ const serviceContent = {
     ]
   },
   electrical: {
-    title: 'Electrical System Service',
+    title: 'ELECTRICAL SYSTEM SERVICE',
     description: 'Electrical diagnosis and repair services',
     sections: [
       {
-        heading: 'Why Electrical System Service Matters',
+        heading: 'WHY ELECTRICAL SYSTEM SERVICE MATTERS',
         content: 'Your vehicle\'s electrical system powers everything from starting the engine to operating lights, sensors, and accessories. Problems here can affect many vehicle systems.'
       },
       {
-        heading: 'Common Electrical Problems',
+        heading: 'COMMON ELECTRICAL PROBLEMS',
         points: [
           'Battery won\'t hold a charge',
           'Vehicle won\'t start',
@@ -732,7 +725,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Electrical Components We Service',
+        heading: 'ELECTRICAL COMPONENTS WE SERVICE',
         points: [
           'Battery testing and replacement',
           'Alternator repair and replacement',
@@ -745,7 +738,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Electrical Service Process',
+        heading: 'OUR ELECTRICAL SERVICE PROCESS',
         points: [
           'Battery testing with professional equipment',
           'Alternator output testing',
@@ -760,15 +753,15 @@ const serviceContent = {
     ]
   },
   steering: {
-    title: 'Steering System Service',
+    title: 'STEERING SYSTEM SERVICE',
     description: 'Power steering and steering component repair',
     sections: [
       {
-        heading: 'Why Steering Service is Important',
+        heading: 'WHY STEERING SERVICE IS IMPORTANT',
         content: 'Your vehicle\'s steering system is critical for control and safety. Proper maintenance ensures responsive, predictable steering in all driving conditions.'
       },
       {
-        heading: 'Signs of Steering Problems',
+        heading: 'SIGNS OF STEERING PROBLEMS',
         points: [
           'Steering wheel is stiff or hard to turn',
           'Steering feels loose or lacks response',
@@ -781,7 +774,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Steering Components We Service',
+        heading: 'STEERING COMPONENTS WE SERVICE',
         points: [
           'Power steering pump',
           'Steering rack and pinion',
@@ -794,7 +787,7 @@ const serviceContent = {
         ]
       },
       {
-        heading: 'Our Steering Service Process',
+        heading: 'OUR STEERING SERVICE PROCESS',
         points: [
           'Check power steering fluid level and condition',
           'Inspect steering components for wear',
@@ -843,18 +836,8 @@ const ServiceDetail = () => {
         ))}
 
         <section className="detail-section cta-section">
-          <h2>Ready to Get Started?</h2>
-          <button
-            className="btn"
-            onClick={() => {
-              navigate('/'); // navigate first
-              setTimeout(() => {
-                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-              }, 100); // small delay to let the new page render
-            }}
-          >
-            Schedule Service
-          </button>
+          <h2>Ready To Get Started?</h2>
+          <button className="btn" onClick={() => navigate('/#contact')}>Schedule Service</button>
         </section>
       </div>
     </div>

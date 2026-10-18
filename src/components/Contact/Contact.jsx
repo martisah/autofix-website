@@ -1,17 +1,14 @@
-import React from 'react'
-import './Contact.css'
+import React from 'react';
+import './Contact.css';
 import BusinessHours from '../BusinessHours/Businesshours';
 
-
 function Contact() {
-
-const [result, setResult] = React.useState("");
+  const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-
     formData.append("access_key", "69b8015c-eb5b-4a0d-b68c-21c24aca0fae");
 
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -32,44 +29,60 @@ const [result, setResult] = React.useState("");
 
   return (
     <div id="contact" className="contact">
-        <div className="contact-col">
-            <h2>Send us a message</h2>
-            <p>Please feel free to contact us with any questions or concerns regarding your vehicle, and our team will respond within 24 hours.</p>
-            
-        <div className="contact-col"></div>
-            <form onSubmit={onSubmit}>
-                <label>Your Name</label>
-                <input type="text" name='name' placeholder='Enter your name' required/>
-                <label>Phone Number</label>
-                <input type="tel" name='phone' placeholder= 'Enter your phone number' required/>
-                <label>Type your message here</label>
-                <textarea name="message" rows="6" placeholder="Enter your issue or question" required></textarea>
-                <button type='submit' className='btn dark-btn'>Submit Now</button>
-            </form>
-            <span>{result}</span>
-        </div>
-    
-    <div className='info'>
-        <h2>Our Info</h2>
-        <ul>
-            <p>(248) 840-7752</p>
-            <p>AutoFixTransmissions@gmail.com</p>
-            <p>7720 Highland rd, Waterford MI 48327</p>
-         </ul>
 
-     <div className='hours'>
-           
-        <h1>Visit Us</h1>
-      <p>Call us or stop by during business hours</p>
+      {/* Contact Form Column */}
+      <div className="contact-col">
+        <h2>Send us a message</h2>
+        <p>Please feel free to contact us with any questions or concerns regarding your vehicle. Our team will respond within 24 hours.</p>
 
-      <BusinessHours />
+        <form onSubmit={onSubmit}>
+          <label>Name</label>
+          <input type="text" name='name' placeholder='Enter your name' required/>
+          <label>Phone Number</label>
+          <input type="tel" name='phone' placeholder='Enter your phone number' required/>
+          <label>Message</label>
+          <textarea name="message" rows="6" placeholder="Enter your issue or question" required></textarea>
+          <button type='submit' className='btn dark-btn'>Submit Now</button>
+        </form>
+        <span>{result}</span>
       </div>
-    </div> 
-<div>
-      
+
+      {/* Contact Info Column */}
+      <div className='contact-info'>
+
+        <h2>Our Info</h2>
+
+        <ul className="contact-list">
+          <li>📞 <a href="tel:12488407752">(248) 840-7752</a></li>
+          <li>✉️ <a href="mailto:AutoFixTransmissions@gmail.com">AutoFixTransmissions@gmail.com</a></li>
+          <li>📍 <a href="https://www.google.com/maps/search/?api=1&query=7720+Highland+Rd+Waterford+MI+48327" target="_blank" rel="noopener noreferrer">7720 Highland Rd, Waterford MI 48327</a></li>
+        </ul>
+
+        {/* Google Rating */}
+        <p className="rating">⭐ 5.0 Rating on Google Reviews</p>
+
+        {/* Business Hours */}
+        <div className='hours'>
+          <h3>Visit Us</h3>
+          <p>Call us or stop by during business hours</p>
+          <BusinessHours />
+        </div>
+      </div>
+
+      {/* Embedded Google Map */}
+      <div className="map">
+        <iframe
+          title="shop-location"
+          src="https://www.google.com/maps?q=7720+Highland+Rd+Waterford+MI+48327&output=embed"
+          width="100%"
+          height="350"
+          style={{ border: 0 }}
+          loading="lazy"
+        ></iframe>
+      </div>
+
     </div>
-    </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

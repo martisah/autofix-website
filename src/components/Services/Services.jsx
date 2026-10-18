@@ -1,10 +1,10 @@
-import React from 'react'
-import './Services.css'
-import ase from '../../assets/ase-logo.png'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import './Services.css';
+import ase from '../../assets/ase-logo.png';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <section className="services">
       <div className="services-text">
@@ -34,7 +34,7 @@ const Services = () => {
               <div className="service-block" onClick={() => navigate('/service/suspension')}>Suspension</div>
               <div className="service-block" onClick={() => navigate('/service/engine-service')}>Engine Service</div>
               <div className="service-block" onClick={() => navigate('/service/maintenance')}>Maintenance</div>
-              <div className="service-block" onClick={() => navigate('/service/leaks')}>Leaks</div>
+              <div className="service-block" onClick={() => navigate('/service/generalleaks')}>General Leaks</div>
               <div className="service-block" onClick={() => navigate('/service/steering')}>Steering</div>
               <div className="service-block" onClick={() => navigate('/service/brakes')}>Brakes</div>
               <div className="service-block" onClick={() => navigate('/service/ac-heating')}>AC & Heating</div>
@@ -45,7 +45,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

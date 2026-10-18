@@ -25,7 +25,7 @@
 }
 
 .contact-col h2 {
-    color: #f64c4c;
+    color: #ffffff;
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 15px;
@@ -71,7 +71,7 @@
 
 .contact form input:focus,
 .contact form textarea:focus {
-    border-color: #f64c4c;
+    border-color: #ffffff;
     box-shadow: 0 0 10px rgba(246, 76, 76, 0.3);
 }
 
@@ -86,13 +86,13 @@
     font-weight: 500;
 }
 
-.info {
+.info{
     display: flex;
     flex-direction: column;
 }
 
 .info h2 {
-    color: #f64c4c;
+    color: #ffffff;
     font-size: 24px;
     margin-bottom: 20px;
     text-align: left;
@@ -106,30 +106,58 @@
 
 .info ul p {
     margin: 0 0 8px 0;
-    color: #e0e0e0;
+    color: #fffefe;
     text-align: left;
     line-height: 1.6;
     font-size: 14px;
     display: block;
 }
 
-.info ul p:before {
+.info ul p  :before {
     content: "📍 ";
     margin-right: 10px;
 }
 
-.info ul p:nth-child(1):before {
+.info ul p a:nth-child(1):before {
     content: "📞 ";
 }
 
-.info ul p:nth-child(2):before {
+.info ul p a:nth-child(2):before {
     content: "📧 ";
 }
 
+.contact-info {
+  color: white; /* makes all text inside white */
+}
+
+.contact-info ul.contact-list {
+  list-style: none;  /* removes bullets */
+  padding: 0;        /* removes default padding */
+  margin: 0;         /* optional: remove margin */
+}
+
+.contact-info ul.contact-list li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;     /* spacing between items */
+  font-size: 15px;
+  color: white;      /* make text white */
+}
+
+.contact-info ul.contact-list li a {
+  color: white;          /* links are white */
+  text-decoration: none;  /* remove underline */
+  margin-left: 8px;       /* space between icon and text */
+}
+
+.contact-info ul.contact-list li a:hover {
+  text-decoration: underline; /* optional hover effect */
+}
+
 .hours {
-    margin-top: 10px;
+    margin-top: 40px;
     padding: 12px 15px;
-    background: rgba(246, 76, 76, 0.1);
+    background: rgba(253, 252, 252, 0.1);
     border-left: 4px solid #f64c4c;
     border-radius: 8px;
 }
@@ -137,7 +165,7 @@
 .hours h1 {
     margin: 0 0 6px 0;
     text-align: left;
-    color: #f64c4c;
+    color: #f9f8f8;
     font-size: 18px;
     font-weight: 600;
 }
