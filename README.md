@@ -1,16 +1,33 @@
-# React + Vite
+# Autofix Transmissions & General Repair
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website for **Autofix Transmissions & General Repair**, an automotive repair shop based in Waterford, Michigan. The site gives customers a quick way to learn about the shop's services and get in touch!
 
-Currently, two official plugins are available:
+**Live site:** https://www.autofixtransmissions.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![alt text](src/assets/image.png)
+![alt text]( src/assets/image-1.png)
+![alt text]( src/assets/image-2.png)
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Autofix specializes in transmission repair and general automotive service. This project is the shop's public-facing website, built to be fast, mobile-friendly, and easy for local customers to use.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<!-- Edit this list to match what the site actually includes. -->
+- Overview of services (transmission repair, general repair, and more)
+- Shop location and business hours
+- Contact information and calls to action
+- Responsive layout for phones, tablets, and desktops.
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/) for development and builds
+- [ESLint](https://eslint.org/) for linting
+- JavaScript, HTML, CSS
+
+
+## License
+
+All rights reserved. The Autofix name, branding, and content belong to their respective owner. The code is shared for portfolio purposes only and may not be copied or redistributed without permission.
